@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+    <link rel="stylesheet" href="Css/Login-page.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Sign Up to Classy</title>
+</head>
+<body>
+    <div class="container">
+            <div class="img-banner">
+
+            </div>
+            <div class="flip-container">
+                <div class="flipper" id="flipper">
+                    <div class="front">
+                        <h1>Sigh up to Classi</h1>
+                        <div class="Bcontainer">
+                            <div class="optionsign">
+                                <div class="google">
+                                    <img src="Images/Google-logo.png" />
+                                </div>
+                                <div class="caption">
+                                    <p>Sign up with Google</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <img src="Images/Twitter-logo.png" />
+                            </div>
+                        </div>
+                        <p class="split-line" >Or</p><hr>
+                        <div class="signUp">
+                            <form action="https://www.google.com/">
+                                <div class="HideVisform" id="FirstF">
+                                    <div class="formT">
+                                        <input type="text" placeholder="Name" required/>&nbsp;
+                                        <input type="text" placeholder="Username" required/>
+                                    </div>
+                                    <div class="formB">
+                                        <input type="email" placeholder="E-mail" required/>
+                                        <input type="password" placeholder="Password" required/>
+                                    </div>
+                                    <input type="radio" name="gender" onclick="gen(1)" required><label>Male</label>
+                                    <input type="radio" name="gender" onclick="gen(2)" required><label>Female</label>
+                                    <input type="radio" name="gender" onclick="gen(1)" required><label>Other</label>
+                                    <div class="checkbox">
+                                        <input type="checkbox" required>
+                                        <p>Creating an account means your okey with or <a href="#">Terms of Service, Privacy Policy</a></p>
+                                    </div>
+                                    <div class="nextbtn">
+                                        <input type="submit" value="Create Account" id="CreateAcc"/>
+                                        <input type="button" value="Next" id="NextBtn" onclick="otherd()">
+                                    </div>
+                                    <p>Already a member? &nbsp;<a class="flipbutton" id="registerButton" href="#">Sign In →</a></p>
+                                </div>
+                            </form>
+                                <!-- Gender details -->
+                            <form id="submit-form">
+                                <div class="VisHideForm" id="SecondF">
+                                    <div class="adbox">
+                                        <div class="ExtraD">
+                                            <input type="text" name="First-Name" placeholder="First-Name" required/>
+                                            <input type="text" name="Last-Name" placeholder="Last-Name" required/>
+                                            <input type="date" name="Date-Of-Birth" required/>
+                                            <input type="text" name="Inst-id" placeholder="Inst-id" required/>
+                                            <input type="tel" name="Phone-Number" maxlength="10" minlength="9" placeholder="Phone-Number" required/>
+                                            <textarea cols="30" rows="7" name="Address" placeholder="Address" required></textarea>
+                                            <input type="number" name="Pin-Code" placeholder="Pin-Code" required/>
+                                            <input type="text" name="City" placeholder="City" required/>
+                                            <input type="text" name="District" placeholder="District" required/>
+                                            <input type="text" name="State" placeholder="State" required/>
+                                        </div>
+                                        <div class="ExtraBtn">
+                                            <input type="button" value="Back" onclick="Noback()" class="left">
+                                            <input type="submit" value="Create Account" id="CreateAcc" class="right"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End -->
+                            </form>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <h1>Sigh In to Classy</h1>
+                        <div class="Bcontainer">
+                            <div class="optionsign">
+                                <div class="google">
+                                    <img src="Images/Google-logo.png" />
+                                </div>
+                                <div class="caption">
+                                    <p>Sign up with Google</p>
+                                </div>
+                            </div>
+                            <div class="twitter">
+                                <img src="Images/Twitter-logo.png" />
+                            </div>
+                        </div>
+                        <p class="split-line" >Or</p><hr>
+                        <div class="signIn">
+                            <form action="https://www.google.com/">
+                                <div class="in-input">
+                                    <input type="text" placeholder="Username" required/>
+                                    <input type="password" placeholder="Password" required/>
+                                </div>
+                                <div class="signbtn">
+                                    <input type="submit" value="Sign up"/>
+                                </div>
+                            </form>
+                        </div>
+                        <p>Not a member? &nbsp;<a class="flipbutton" id="loginButton" href="#">Sign up now →</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $("#submit-form").submit((e)=>{
+                e.preventDefault()
+                $.ajax({
+                    url:"https://script.google.com/macros/s/AKfycbxhoW5ON8XJYPJspAIP9KAXcPQYoGJKYCTEoByvzrP_Ct1RlhXLgaw__dnt57BjJhey/exec",
+                    data:$("#submit-form").serialize(),
+                    method:"post",
+                    success:function (response){
+                        alert("Account created successfully")
+                        window.location.href="https://google.com"
+                    },
+                    error:function (err){
+                        alert("Something Error")
+        
+                    }
+                })
+            })
+        </script>
+        <script src="Js File/Login-page.js"></script>
+</body>
+</html>

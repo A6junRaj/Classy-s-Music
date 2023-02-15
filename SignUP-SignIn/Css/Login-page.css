@@ -1,0 +1,227 @@
+body {
+    margin: 0px;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center
+}
+.container .img-banner{
+    background-image: url("Images/Bg-img-login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100vh;
+}
+/* Flip div */
+.flip-container {
+    perspective: 1000;
+    width: 50%;
+    height: 100vh;
+    background-color:#ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flipper {
+    width: 60%;
+    height: 580px;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    background-color:#ffff;
+}
+.front,.back {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+}
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.back {
+    transform: rotateY(180deg);
+}
+.flip {
+    transform: rotateY(180deg);
+}
+.signUp,.signIn{
+    width: 100%;
+    margin-top: 30px;
+}
+.signUp form .checkbox{
+    width: 98.5%;
+    margin-bottom: 30px;
+}
+.signUp form .checkbox input{
+    float: left;
+}
+.signUp form .checkbox p{
+    color: #6E6D7A;
+}
+.signUp form .checkbox p a{
+    text-decoration: none;
+}
+.signUp form .formB,.signUp form .in-input .formT{
+    width: 100%;
+}
+.signUp form .formB input,.signIn form .in-input input{
+    width: 98.5%;
+    height: 35px;
+    border-radius: 7px;
+    margin: 20px 0px;
+    border: none;
+    outline: none;
+    background: cyan;
+    /* box-sizing: border-box; */
+}
+.signUp form .formT input {
+    width: 48.75%;
+    height: 35px;
+    border-radius: 7px;
+    margin: 20px 0px;
+    background: cyan;
+    padding: 0px;
+    border: none;
+    outline: none;
+}
+.signUp form .formT input:hover,.signUp form .formB input:hover,.signIn form .in-input input:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Bcontainer{
+    width: 210px;
+    height: 29px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+.Bcontainer .optionsign{
+    width: 165px;
+    height: 25px;
+    padding: 2px;
+    border-radius: 3px;
+    float: left;
+    background-color: #1A73E8;
+    cursor: no-drop;
+}
+.Bcontainer .optionsign:hover{
+    background-color: #5194EE;
+    
+}
+.Bcontainer .optionsign .google{
+    width: 25px;
+    height: 25px;
+    float: left;
+    border-radius: 3px 0px 0px 3px;
+    background-color: rgb(255, 255, 255);
+}
+.Bcontainer .optionsign .google img{
+    width: 25px;
+    height: 25px;
+}
+.Bcontainer .optionsign .caption{
+    width: 135px;
+    height: 25px;
+    float: right;
+}
+.Bcontainer .optionsign .caption p{
+    color: #ffff;
+    margin: 3px auto;
+}
+.Bcontainer .twitter{
+    width: 29px;
+    height: 29px;
+    float: right;
+    border-radius: 3px;
+    background-color: #00aeef;
+    cursor: not-allowed;
+}
+.Bcontainer .twitter img{
+    width: 20px;
+    height: 20px;
+    padding: 4px 0px 0px 4px;
+}
+.split-line{
+    text-align: center;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+hr{
+    color: black;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+#NextBtn,.VisHideForm{
+    display: none;
+}
+
+/* ExtraD */
+.adbox{
+    width: 100%;
+    height: 401px;
+    background-color: #ffff;
+    overflow: auto;
+}
+.adbox .ExtraD input,.adbox .ExtraD textarea {
+    width: 98.5%;
+    height: 35px;
+    border-radius: 7px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    background: cyan;
+}
+.adbox .ExtraBtn{
+    width: 100%;
+    height: 25px;
+    border-radius: 7px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* End */
+
+
+
+/* Button Style */
+.ExtraBtn input,.nextbtn input,.signbtn input{
+    width: 110px;
+    height: 30px;
+    color: #ffff;
+    border: none;
+    background-color: #EA4C89;
+}
+.ExtraBtn input:hover,.nextbtn input:hover,.signbtn input:hover{
+    background: #F082AC;
+}
+/* End */
+.flipbutton {
+    color: #4096ee;
+    text-decoration: none;
+    text-align: left !important;
+}
+/* Alignment styles */
+body, html {
+    height: 100%;
+}
+@media screen and (max-width:1250px){
+    .container .img-banner{
+        display: none;
+        }
+    .flipper{
+        width: 95%;
+        height: 640px;
+    }
+    .flip-container{
+        width: 100%;
+        height: 100vh;
+    }
+}

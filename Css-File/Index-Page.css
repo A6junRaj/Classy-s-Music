@@ -1,0 +1,316 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+#bg-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+section h3{
+    font-family: 'Permanent Marker', cursive;
+}
+.text-parent{
+    position: absolute;
+    bottom: -0.75rem;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    left: 13%;
+    align-items: center;
+    color: cyan;
+}
+.text-over-img{
+    margin-bottom: 15%;
+}
+h3 span{
+    color: rgb(34, 131, 219);
+}
+.auto-type{
+    color: rgb(50, 101, 27);
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: bold;
+}
+.contant{
+    position: relative;
+    overflow: visible;
+    color: wheat;
+}
+.contant-heading{
+    position: relative;
+    font-family: 'Sriracha', cursive;
+    width: 101%;
+    height: 10%;
+    background-color:#f1f5f8;
+    color: rgb(37, 44, 55);
+    padding: 2%;
+}
+/*Right contant or Banner Part Start*/
+#RPparent{
+    display: block;
+}
+#Fparent,#Sparent,#Tparent,#Foparent,#Fiparent,#Siparent,#Separent,#Eparent,#Nparent,#Teparent{
+    display: none;
+}
+.right-part{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    background-color: #f1f5f8;
+}
+.banner-img{
+    width: 80%;
+    height: 68%;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+.r-text {
+    text-align: center;
+    width: 80%;
+    margin-top: 10px;
+    color: rgb(37, 44, 55);
+}
+.r-text h2{
+    font-family: 'Sriracha', cursive;
+}
+.r-text h2 p{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+.qu-name{
+    width: 100%;
+    text-align: right;
+}
+/*End of Banner part*/
+/* Music Banner part */
+.First,.Second,.Third,.Fourth,.Fifth,.Sixth,.Seventh,.Eighth,.Ninth,.Tenth{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    background-color: #f1f5f8;
+}
+/* End of Right part and Music Banner */
+/*Music-bar  or  Left Contant*/
+.left-part{
+    width: 100%;
+    height: 800px;
+    background-color: #f1f5f8;
+}
+.cont{
+    font-size: 62.5%;
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+}
+.cont .music-cont{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+.cont .music-cont .box{
+    height: 7rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem black;
+    overflow: hidden;
+    margin: 1rem;
+}
+.cont .music-cont .box .image1{
+    height: 100%;
+    width: 25%;
+}
+.cont .music-cont .box .image1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cont .music-cont .box .musi{
+    width: 70%; 
+}
+.cont .music-cont .box .musi audio{
+    width: 100%; 
+    outline: none;
+} 
+.cont .music-cont .box .musi audio::webkit-media-controls-enclosure{
+    background: none;
+} 
+@media (max-widht:600px){
+    .cont .music-cont .box{
+        height: 27rem;
+        width: 90%;
+        flex-flow: column;
+    }
+    .cont .music-cont .box .image1{
+        height: 80%;
+        width: 100%;
+    }
+    .cont .music-cont .box .musi{
+        height: 20%;
+        width: 100%;
+    }
+} 
+/*------------------Start of More Button------------------*/
+.ShowDivBtn {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    width: 130px;
+    margin: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.ShowDivBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.ShowDivBtn span:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.ShowDivBtn:hover{
+    background-color: #f73c03;
+    box-shadow: 0 .5rem 1rem black;
+}
+
+.ShowDivBtn:hover span {
+    padding-right: 25px;
+}
+
+.ShowDivBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+/*------------------End of More Button------------------*/
+/*End of Music-bar  or  Left Contant*/
+/* Words about Music */
+.bg-word{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    background-color: rgba(0, 0, 0, 0.75); 
+}
+.words{
+    width: 90%;
+    height: 40%;
+    padding: 80px;
+    text-align: center;
+}
+.words h1{
+    font-size: 35px;
+}
+.words p{
+    font-size: 17px;
+}
+/* End */
+/* info about Singers */
+.info{
+    width: 102%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #f1f5f8;
+}
+.ingo-heading{
+    width: 100%;
+    height: 110px;
+    margin: 5px;
+    padding-top: 60px;
+    text-align: center;
+    color: rgb(37, 44, 55);
+    font-family: 'Sriracha', cursive;
+}
+.Xt,.Al,.Be,.Ag{
+    width: 325px;
+    height: 370px;
+    margin-top: 35px;
+    text-align: center;
+    background-color: rgb(34, 131, 219);
+}
+.Xt .Xt-img,.Al .Al-img,.Be .Be-img,.Ag .Ag-img{
+    width: 100%;
+    height: 200px;
+}
+.Xt-img img,.Al-img img,.Be-img img,.Ag-img img{
+    width: 190px;
+    height: 190px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.Xt-text hr,.Al-text hr,.Be-text hr,.Ag-text hr{
+    color: white;
+} 
+.Xt:hover,.Al:hover,.Be:hover,.Ag:hover{
+    background-color: rgb(11, 84, 151);
+    border-radius: 10px;
+    border: 2px solid rgb(34, 131, 219) ;
+}
+/* End */
+/* Footer Start */
+.whitesrc{
+    width: 102%;
+    height: 65px;
+    background-color: #f1f5f8;
+}
+.topF{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.950);
+}
+.topF .F-logo{
+    width: 147px;
+    height: 120px;
+    margin: auto;
+    padding-top: 60px;
+}
+.topF .F-logo img{
+    width: 25px;
+    height: 25px;
+    cursor: no-drop;
+    opacity: 55%;
+}
+.topF .F-logo img:hover{
+    opacity: 80%;
+}
+.topF .F-contant{
+    width: 102%;
+    height: 50px;
+}
+.topF .F-contant a{
+    padding: 0px 2%;
+    text-decoration: none;
+    color: #f1f5f8;
+    cursor: no-drop;
+}
+.topF .F-contant a:hover{
+    color: #f73c03;
+}
+.bottumF{
+    background-color: black;
+    text-align: center;
+    width: 102%;
+    height: 30px;
+}
+.bottumF p{
+    font-size: 10px;
+    padding: 6px;
+}
